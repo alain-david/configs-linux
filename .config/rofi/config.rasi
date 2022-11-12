@@ -1,0 +1,9 @@
+configuration {
+	font: "Nerd Fonts Jetbrains Mono 14";
+	show-icons: true;
+	terminal: "rofi-sensible-terminal";
+	icon-theme: "Papirus";
+	drun-show-actions: false;
+	separator-style: "dash";
+}
+@theme "/usr/share/rofi/themes/android_notification.rasi"
