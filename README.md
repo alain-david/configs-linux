@@ -156,19 +156,6 @@ nm-applet & # Systray Network Manager
 udiskie -t & # Systray dispositivos
 volumeicon & # Systray volume
 ```
-## Gestos
-
-Crea 30-touchpad.conf para configurar los gestos
-    
-    sudo nvim /etc/X11/xorg.conf.d/30-touchpad.conf
-Dentro pega esto:
-```bash
-Section "InputClass"
-	Identifier "touchpad"
-	Driver "libinput"
-	Option "Tapping" "on"
-EndSection
-```
 ## Media Transfer Protocol
 
 Conectar teléfono usando un cable USB:
