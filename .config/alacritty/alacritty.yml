@@ -1,15 +1,15 @@
 font:
   bold:
-    family: Nerd Fonts Jetbrains Mono 
+    family: Mononoki Nerd Font
   
   italic:
-    family: Nerd Fonts Jetbrains Mono    
+    family: Mononoki Nerd Font
   
   normal:
-    family: Nerd Fonts Jetbrains Mono
+    family: Mononoki Nerd Font
     
-    style: Regular
-  size: 11
+    # style: bold 
+  size: 12
 
 # colors:
   # primary:

@@ -37,8 +37,8 @@ def workspaces():
         separator(),
         widget.GroupBox(
             **base(fg='light'),
-            font='UbuntuMono Nerd Font',
-            fontsize=19,
+            font='Mononoki Nerd Font',
+            fontsize=17,
             margin_y=3,
             margin_x=0,
             padding_y=8,
@@ -121,7 +121,7 @@ secondary_widgets = [
 ]
 
 widget_defaults = {
-    'font': 'Nerd Fonts Jetbrains Mono',
+    'font': 'Mononoki Nerd Font',
     'fontsize': 14,
     'padding': 2,
 }
