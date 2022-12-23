@@ -33,4 +33,4 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 export ANDROID_HOME=$HOME/development/android
 export SDK_MANAGER=$ANDROID_HOME/cmdline-tools/latest/bin
 
-export PATH=$PATH:$GOBIN:$GOROOT/bin:$FLUTTER_BIN:$JAVA_HOME:$SDK_MANAGER
+export PATH=$PATH:$GOBIN:$GOROOT/bin:$FLUTTER_BIN:$JAVA_HOME:$SDK_MANAGER:$ANDROID_HOME

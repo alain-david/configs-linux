@@ -18,7 +18,7 @@ from .keys import mod, keys
 # nf-fae-telegram,
 
 groups = [Group(i) for i in [
-   "  ", "  ", "  ", "  ", "  ", " 嗢 ", "  ", "  ", " ",
+   "  ", "  ", "  ", "  ", "  ", " 嗢 ", "  ", "  ", " ",
 ]]
 
 for i, group in enumerate(groups):
