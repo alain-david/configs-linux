@@ -77,7 +77,7 @@ makepkg -si
 
 ### Fuentes
 
-    paru -S nerd-fonts-ubuntu-mono
+    paru -S nerd-fonts-meta
 
 Para listar todas las fuentes disponibles:
 
