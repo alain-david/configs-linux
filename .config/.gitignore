@@ -1,9 +1,9 @@
 # Ignore everything
 /*
 !alacritty
+!neofetch
 !nvim
 !qtile
 !ranger
 !rofi
 !.gitignore
-!picom.conf

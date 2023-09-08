@@ -20,10 +20,10 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "t", lazy.window.toggle_floating()),
 
     # Kill window
-    ([mod], "w", lazy.window.kill()),
+    ([mod], "q", lazy.window.kill()),
 
     # Restart Qtile
-    ([mod], "q", lazy.restart()),
+    ([mod, "shift"], "w", lazy.restart()),
     ([mod, "shift"], "q", lazy.shutdown()),
 
     # Toggle between different layouts as defined below
@@ -42,7 +42,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod, "shift"], "p", lazy.spawn("rofi -show")),
 
     # Browser
-    ([mod], "b", lazy.spawn("firefox")),
+    ([mod], "b", lazy.spawn("google-chrome-stable")),
 
     # File Explorer
     ([mod], "e", lazy.spawn("pcmanfm")),
@@ -52,12 +52,6 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     
     # Code 
     ([mod], "c", lazy.spawn("code")),
-
-    # Musik
-    ([mod], "m", lazy.spawn("rhythmbox")),
-
-    # VLC
-    ([mod], "v", lazy.spawn("vlc")),   
 
     # Screenshot
     ([mod], "s", lazy.spawn("scrot")),

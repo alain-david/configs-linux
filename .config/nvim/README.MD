@@ -11,12 +11,13 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 sudo pacman -S nodejs npm python python-pip ruby rubygems
 
 # Paquetes de neovim
+sudo pacman -S python-neovim
 sudo npm i -g neovim
-pip install neovim
 gem install neovim
 
 # Otras dependencias
-sudo pacman -S xsel fzf
+sudo pacman -S xsel fzf prettier
+paru -S ctags-git
 ```
 
 Después ejecuta ```:PlugInstall``` dentro de neovim y debería funcionar.

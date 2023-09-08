@@ -1,5 +1,5 @@
 configuration {
-	font: "Nerd Fonts Jetbrains Mono 14";
+	font: "UbuntuMono Nerd Font 14";
 	show-icons: true;
 	terminal: "rofi-sensible-terminal";
 	icon-theme: "Papirus";

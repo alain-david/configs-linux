@@ -19,6 +19,9 @@ call plug#begin('~/.config/nvim/plugged')
     " Syntax support
     " Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Plug 'terryma/vim-multiple-cursors'
+    
+    " Vim Go
+    Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
     " Autopairs
     Plug 'jiangmiao/auto-pairs'

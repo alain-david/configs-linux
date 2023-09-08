@@ -3,3 +3,4 @@ picom &
 nm-applet &
 udiskie -t &
 volumeicon &
+cbatticon -u 5 &
