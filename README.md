@@ -1,13 +1,14 @@
-# Intalar paquetes bases:  
+# Intalar paquetes bases:
 
 ```bash
 sudo pacman -S alacritty lightdm lightdm-gtk-greeter qtile rofi xorg xorg-xinit
 ```
+
 Activa el servicio de lightdm :
 
     sudo systemctl enable lightdm
 
-Reinicia. 
+Reinicia.
 
 # Utilidades básicas del sistema
 
@@ -16,10 +17,12 @@ Reinicia.
     sudo pacman -S ntfs-3g
 
 Para montar una unidad ejecutaremos el siguiente comando:
+
 ```bash
 # /dev/sdxx la unidad y /mnt/ntfs punto de montaje
 sudo mount /dev/sdxx /mnt/ntfs
 ```
+
 Si queremos que la unidad NTFS siempre este desde el inicio hay que modificar el fichero fstab:
 
     sudo nano /etc/fstab
@@ -39,6 +42,7 @@ Establecer los atajos de teclado en:
 Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
 Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
 ```
+
 ## Audio
 
     sudo pacman -S alsa-utils pamixer
@@ -52,7 +56,7 @@ Establecer los atajos de teclado en:
 ([], "XF86AudioMute", lazy.spawn("amixer set Master toggle")),
 ```
 
-Activa el audio porque está en "mute". 
+Activa el audio porque está en "mute".
 
 ## Systray
 
@@ -65,6 +69,7 @@ Instalar iconos para la batería, discos, red y el volumen:
     volumeicon &
 
 ## AUR helper
+
 Instalar **[paru](https://github.com/Morganamilo/paru)**:
 
 ```bash
@@ -73,6 +78,7 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 ```
+
 ## Perzonalizar
 
 ### Fuentes
@@ -105,6 +111,7 @@ Instalar iconos, tema y transparencia:
     paru -S lightdm-webkit2-theme-glorious
 
 Estas son las configuraciones que tienes que hacer:
+
 ```ini
 # /etc/lightdm/lightdm.conf
 [Seat:*]
@@ -119,9 +126,10 @@ greeter-session = lightdm-webkit2-greeter
 debug_mode = true #true #false
 webkit_theme = glorious
 ```
+
 Para cambiar el avatar:
 
-	paru -S mugshot
+    paru -S mugshot
 
 ### Tema Grub
 
@@ -130,21 +138,23 @@ Ruta donde copiar los temas:
     /boot/grub/themes
 
 Modifique /etc/default/grub:
+
 ```ini
 GRUB_THEME="/boot/grub/themes/NombreDeTema/theme.txt"
 ```
+
 Regenere grub.cfg para aplicar los cambios:
 
     sudo grub-mkconfig -o /boot/grub/grub.cfg
 
-Aparecerá el mensaje Found theme: /boot/grub/themes/starfield/theme.txt. 
+Aparecerá el mensaje Found theme: /boot/grub/themes/starfield/theme.txt.
 
 ## Xprofile
 
-Puedes usar *.xprofile* para lanzar programas antes de que se ejecute
+Puedes usar _.xprofile_ para lanzar programas antes de que se ejecute
 el gestor de ventanas:
 
-    nano .xprofile
+    nvim .xprofile
 
 Dentro pega esto:
 
@@ -156,6 +166,7 @@ nm-applet & # Systray Network Manager
 udiskie -t & # Systray dispositivos
 volumeicon & # Systray volume
 ```
+
 ## Media Transfer Protocol
 
 Conectar teléfono usando un cable USB:
