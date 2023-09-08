@@ -1,3 +1,7 @@
+# ENV VAR
+export QT_STYLE_OVERRIDE=kvantum
+
+# Auto Start
 ~/.fehbg &
 picom &
 nm-applet &
