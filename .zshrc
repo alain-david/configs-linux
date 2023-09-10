@@ -28,5 +28,6 @@ export FLUTTER_BIN=$HOME/development/flutter/bin
 export JAVA_HOME=$HOME/.jdks/openjdk-20.0.2/bin
 export ANDROID_HOME=$HOME/Android/Sdk
 export SDK_MANAGER=$ANDROID_HOME/cmdline-tools/latest/bin
+export CHROME_EXECUTABLE=/sbin/google-chrome-stable
 
-export PATH=$GOBIN:$GOROOT/bin:$FLUTTER_BIN:$JAVA_HOME:$SDK_MANAGER:$ANDROID_HOME:$PATH
+export PATH=$CHROME_EXECUTABLE:$GOBIN:$GOROOT/bin:$FLUTTER_BIN:$JAVA_HOME:$SDK_MANAGER:$ANDROID_HOME:$PATH
